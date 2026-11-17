@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PULSE — фітнес-клуб у центрі Києва</title>
+  <meta name="description" content="PULSE — фітнес-клуб на 1500 м² у центрі Києва. Дванадцять напрямків, зал вільної ваги і тренери. Перше заняття безкоштовно.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="logo"><span class="logo__dot"></span>PULSE</a>
+    <nav class="nav" id="nav">
+      <a href="#directions">Напрямки</a>
+      <a href="#trainers">Тренери</a>
+      <a href="#prices">Абонементи</a>
+      <a href="#schedule">Розклад</a>
+      <a href="#contacts">Контакти</a>
+      <a href="tel:+380441234567" class="nav__phone nav__phone--mobile">+380 44 123 45 67</a>
+    </nav>
+    <a href="tel:+380441234567" class="header__phone">+380 44 123 45 67</a>
+    <a href="#trial" class="btn btn--dark header__cta">Пробне заняття <span class="arrow">→</span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <img class="hero__bg" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=75" alt="">
+    <div class="hero__shade"></div>
+    <div class="container hero__inner">
+      <div class="hero__meta">
+        <span>Київ, вул. Спортивна, 12</span>
+        <span>Щодня 06:00–23:00</span>
+      </div>
+      <h1 class="hero__title">
+        Стань сильнішим<br>
+        <span class="accent">за вчорашнього себе</span>
+      </h1>
+      <div class="hero__badge"><b>−30%</b><small>на перший місяць</small></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Силові / Кросфіт / Йога / Бокс / Стретчинг / Кардіо / Силові / Кросфіт / Йога / Бокс / Стретчинг / Кардіо /&nbsp;</span>
+      <span>Силові / Кросфіт / Йога / Бокс / Стретчинг / Кардіо / Силові / Кросфіт / Йога / Бокс / Стретчинг / Кардіо /&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== Intro + stats ===== -->
+  <section class="intro container">
+    <div class="intro__text">
+      <p>Клуб на 1500 м² у центрі міста. Дванадцять напрямків, зал вільної ваги і тренери, які пам'ятають, як тебе звати і що в тебе болить.</p>
+      <div class="intro__actions">
+        <a href="#trial" class="btn btn--accent">Записатися на пробне <span class="arrow">→</span></a>
+        <a href="#prices" class="link-underline">Переглянути абонементи</a>
+      </div>
+    </div>
+    <ul class="stats">
+      <li><b>1200+</b><span>людей тренуються зараз</span></li>
+      <li><b>25</b><span>тренерів у команді</span></li>
+      <li><b>40</b><span>групових занять на тиждень</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== 01 Directions ===== -->
+  <section class="section container" id="directions">
+    <div class="section__label"><span>(01)</span><span>Напрямки</span></div>
+    <div class="section__head">
+      <h2 class="h2">Обери своє<br>тренування</h2>
+      <p class="section__lead">Не знаєш, з чого почати — приходь на пробне, тренер підкаже після розмови й короткого тесту.</p>
+    </div>
+    <div class="directions">
+      <div class="directions__photo">
+        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=900&q=75" alt="Тренування зі штангою" loading="lazy">
+      </div>
+      <ul class="dir-list">
+        <li><a href="#trial" data-dir="Силові"><i>01</i><b>Силові</b><span>Вільна вага, тренажери Hammer</span><em>→</em></a></li>
+        <li><a href="#trial" data-dir="Кросфіт"><i>02</i><b>Кросфіт</b><span>WOD у групах до 10 людей</span><em>→</em></a></li>
+        <li><a href="#trial" data-dir="Йога"><i>03</i><b>Йога</b><span>Хатха, віньяса, йога для спини</span><em>→</em></a></li>
+        <li><a href="#trial" data-dir="Бокс"><i>04</i><b>Бокс</b><span>Ринг, мішки, постановка удару</span><em>→</em></a></li>
+        <li><a href="#trial" data-dir="Стретчинг"><i>05</i><b>Стретчинг</b><span>Гнучкість і відновлення</span><em>→</em></a></li>
+        <li><a href="#trial" data-dir="Кардіо"><i>06</i><b>Кардіо</b><span>Сайкл, біг, інтервальні HIIT</span><em>→</em></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 02 Trainers ===== -->
+  <section class="section container" id="trainers">
+    <div class="section__label"><span>(02)</span><span>Команда</span></div>
+    <div class="section__head">
+      <h2 class="h2">Тренери</h2>
+      <p class="section__lead">Нижче — ті, з ким починає більшість новачків. Решту команди покажемо в клубі.</p>
+    </div>
+    <div class="trainers">
+      <article class="trainer">
+        <div class="trainer__photo"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=600&q=75" alt="Олена Коваль" loading="lazy"></div>
+        <div class="trainer__row"><h3>Олена Коваль</h3><b>9 років</b></div>
+        <p>Йога, стретчинг</p>
+      </article>
+      <article class="trainer trainer--low">
+        <div class="trainer__photo"><img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=75" alt="Максим Бондар" loading="lazy"></div>
+        <div class="trainer__row"><h3>Максим Бондар</h3><b>12 років</b></div>
+        <p>Силові, кросфіт</p>
+      </article>
+      <article class="trainer">
+        <div class="trainer__photo"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=75" alt="Ірина Шевчук" loading="lazy"></div>
+        <div class="trainer__row"><h3>Ірина Шевчук</h3><b>6 років</b></div>
+        <p>Кардіо, HIIT</p>
+      </article>
+      <article class="trainer trainer--low">
+        <div class="trainer__photo"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=75" alt="Андрій Мельник" loading="lazy"></div>
+        <div class="trainer__row"><h3>Андрій Мельник</h3><b>15 років</b></div>
+        <p>Бокс</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 03 Club ===== -->
+  <section class="section container" id="club">
+    <div class="section__label"><span>(03)</span><span>Клуб зсередини</span></div>
+    <div class="section__head">
+      <h2 class="h2">1500 м² без черг<br>до тренажерів</h2>
+      <p class="section__lead">Три зали, ринг і зона відновлення. Приходь подивитися — екскурсія займає десять хвилин.</p>
+    </div>
+    <div class="gallery">
+      <figure class="gallery__big">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=75" alt="Зал вільної ваги" loading="lazy">
+        <figcaption>Зал вільної ваги — 600 м²</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=900&q=75" alt="Ринг і мішки" loading="lazy">
+        <figcaption>Ринг і мішки</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=75" alt="Студія групових занять" loading="lazy">
+        <figcaption>Студія групових занять</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== 04 Prices ===== -->
+  <section class="section container" id="prices">
+    <div class="section__label"><span>(04)</span><span>Ціни</span></div>
+    <div class="section__head">
+      <h2 class="h2">Обери абонемент</h2>
+      <p class="section__lead">Без вступних внесків і дрібного шрифту.<br>Заморозка до 14 днів у кожному тарифі.</p>
+    </div>
+
+    <div class="period">
+      <div class="period__tabs" role="tablist">
+        <button class="is-active" data-period="1" role="tab">1 місяць</button>
+        <button data-period="3" role="tab">3 місяці <em>−10%</em></button>
+        <button data-period="12" role="tab">12 місяців <em>−25%</em></button>
+      </div>
+      <span class="period__note">Ціна за місяць при обраному терміні</span>
+    </div>
+
+    <div class="plans">
+      <label class="plan">
+        <input type="radio" name="plan" value="Старт">
+        <div class="plan__head"><span class="radio"></span><h3>Старт</h3></div>
+        <p class="plan__sub">Зал у денний час</p>
+        <div class="plan__price"><b data-price="890">890</b><span>грн / міс</span></div>
+        <p class="plan__year">за рік — <span data-year="890"></span> грн / міс</p>
+        <ul>
+          <li>Тренажерний зал до 17:00</li>
+          <li>4 групових заняття на місяць</li>
+          <li>Вступний інструктаж</li>
+        </ul>
+      </label>
+      <label class="plan plan--dark">
+        <input type="radio" name="plan" value="Оптимум" checked>
+        <div class="plan__head"><span class="radio"></span><h3>Оптимум</h3><span class="plan__tag">Найчастіше беруть</span></div>
+        <p class="plan__sub">Зал і групові без обмежень</p>
+        <div class="plan__price"><b data-price="1490">1 490</b><span>грн / міс</span></div>
+        <p class="plan__year">за рік — <span data-year="1490"></span> грн / міс</p>
+        <ul>
+          <li>Зал у будь-який час</li>
+          <li>Усі групові заняття</li>
+          <li>1 персональне тренування</li>
+          <li>Сауна та рушник</li>
+        </ul>
+      </label>
+      <label class="plan">
+        <input type="radio" name="plan" value="Безліміт">
+        <div class="plan__head"><span class="radio"></span><h3>Безліміт</h3></div>
+        <p class="plan__sub">Для тих, хто йде на результат</p>
+        <div class="plan__price"><b data-price="2190">2 190</b><span>грн / міс</span></div>
+        <p class="plan__year">за рік — <span data-year="2190"></span> грн / міс</p>
+        <ul>
+          <li>Усе з тарифу «Оптимум»</li>
+          <li>4 персональних тренування</li>
+          <li>План харчування</li>
+          <li>Гостьовий візит щомісяця</li>
+        </ul>
+      </label>
+    </div>
+
+    <div class="choice">
+      <div>
+        <small>Твій вибір</small>
+        <strong id="choiceName">Оптимум · 1 місяць</strong>
+      </div>
+      <b class="choice__sum" id="choiceSum">1 490 грн</b>
+      <a href="#trial" class="btn btn--accent choice__btn" id="choiceBtn">Оформити абонемент <span class="arrow">→</span></a>
+    </div>
+    <p class="note">Оплата карткою онлайн або на рецепції. Абонемент починає діяти з першого візиту.</p>
+  </section>
+
+  <!-- ===== 05 Schedule ===== -->
+  <section class="section container" id="schedule">
+    <div class="section__label"><span>(05)</span><span>Групові заняття</span></div>
+    <div class="section__head">
+      <h2 class="h2">Розклад</h2>
+      <p class="section__lead">Запис відкривається за 48 годин до початку.<br>Скасувати можна за дві години.</p>
+    </div>
+    <div class="schedule-wrap">
+      <table class="schedule" id="scheduleTable">
+        <thead>
+          <tr>
+            <th>Час</th><th>Понеділок</th><th>Вівторок</th><th>Середа</th><th>Четвер</th><th>П'ятниця</th><th>Субота</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time">08:00</td>
+            <td><b>Йога</b><span>О. Коваль</span></td>
+            <td><b>Кардіо</b><span>І. Шевчук</span></td>
+            <td><b>Йога</b><span>О. Коваль</span></td>
+            <td><b>Стретчинг</b><span>О. Коваль</span></td>
+            <td><b>Йога</b><span>О. Коваль</span></td>
+            <td><b>Кросфіт</b><span>М. Бондар</span></td>
+          </tr>
+          <tr>
+            <td class="time">10:00</td>
+            <td><b>Стретчинг</b><span>О. Коваль</span></td>
+            <td><b>Силові</b><span>М. Бондар</span></td>
+            <td><b>Бокс</b><span>А. Мельник</span></td>
+            <td><b>Силові</b><span>М. Бондар</span></td>
+            <td><b>Кардіо</b><span>І. Шевчук</span></td>
+            <td><b>Йога</b><span>О. Коваль</span></td>
+          </tr>
+          <tr>
+            <td class="time">18:00</td>
+            <td><b>Кросфіт</b><span>М. Бондар</span></td>
+            <td><b>Бокс</b><span>А. Мельник</span></td>
+            <td><b>Кросфіт</b><span>М. Бондар</span></td>
+            <td><b>Бокс</b><span>А. Мельник</span></td>
+            <td><b>Кросфіт</b><span>М. Бондар</span></td>
+            <td><b>Стретчинг</b><span>О. Коваль</span></td>
+          </tr>
+          <tr>
+            <td class="time">19:30</td>
+            <td><b>Бокс</b><span>А. Мельник</span></td>
+            <td><b>Йога</b><span>О. Коваль</span></td>
+            <td><b>Силові</b><span>М. Бондар</span></td>
+            <td><b>Кардіо</b><span>І. Шевчук</span></td>
+            <td><b>Силові</b><span>М. Бондар</span></td>
+            <td class="empty">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== Testimonial ===== -->
+  <section class="quote container">
+    <div class="quote__mark">“</div>
+    <blockquote>
+      <p>Я прийшла «на місяць, схуднути до відпустки». Минуло два роки — присідаю зі штангою 70 кг і вперше не боюся залу.</p>
+      <footer><b>Марина Гончар</b><span>тренується з Максимом, тариф «Оптимум»</span></footer>
+    </blockquote>
+  </section>
+
+  <!-- ===== 06 Trial ===== -->
+  <section class="trial" id="trial">
+    <div class="trial__photo">
+      <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=1200&q=75" alt="Станова тяга" loading="lazy">
+    </div>
+    <div class="trial__body">
+      <div class="section__label section__label--light"><span>(06)</span><span>Пробне заняття</span></div>
+      <h2 class="h2 h2--light">Перше заняття<br><span class="accent">за наш рахунок</span></h2>
+      <p class="trial__lead">Залиш номер — адміністратор Катя передзвонить за 15 хвилин і підбере час.</p>
+      <form class="form" id="trialForm" novalidate>
+        <div class="form__row">
+          <label class="field">
+            <span>Ім'я</span>
+            <input type="text" name="name" placeholder="Як до тебе звертатися" autocomplete="given-name" required>
+          </label>
+          <label class="field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+380" autocomplete="tel" required>
+          </label>
+        </div>
+        <label class="field field--select">
+          <span>Напрямок</span>
+          <select name="direction" id="directionSelect">
+            <option value="">Ще не знаю, пораджуся з тренером</option>
+            <option>Силові</option>
+            <option>Кросфіт</option>
+            <option>Йога</option>
+            <option>Бокс</option>
+            <option>Стретчинг</option>
+            <option>Кардіо</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn--accent btn--wide">Записатися на пробне <span class="arrow">→</span></button>
+        <p class="form__legal">Натискаючи кнопку, ти погоджуєшся з політикою конфіденційності.</p>
+        <p class="form__success" id="formSuccess" hidden>Дякуємо! Катя передзвонить протягом 15 хвилин.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__cols">
+      <div>
+        <h4>Контакти</h4>
+        <p>вул. Спортивна, 12, Київ</p>
+        <p><a href="tel:+380441234567">+380 44 123 45 67</a></p>
+        <p><a href="mailto:hello@pulse-fit.ua">hello@pulse-fit.ua</a></p>
+      </div>
+      <div>
+        <h4>Графік</h4>
+        <p>Пн–Пт 06:00–23:00</p>
+        <p>Сб–Нд 08:00–22:00</p>
+      </div>
+      <div>
+        <h4>Клуб</h4>
+        <p><a href="#directions">Напрямки</a></p>
+        <p><a href="#trainers">Тренери</a></p>
+        <p><a href="#prices">Абонементи</a></p>
+        <p><a href="#schedule">Розклад</a></p>
+      </div>
+      <div>
+        <h4>Ми в мережі</h4>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Telegram</a></p>
+        <p><a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer__logo">PULSE</div>
+    <div class="footer__bottom">
+      <span>© 2026 PULSE</span>
+      <span><a href="#">Політика конфіденційності</a> · Фото: Unsplash</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
